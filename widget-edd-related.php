@@ -58,7 +58,7 @@ class edd_related_downloads_widget extends WP_Widget {
 				if( $eddrdw_query->have_posts() ) {
 
 					if ( $title ) {
-						echo '<h3 class="widget-title">'. $title . '</h3>';
+						echo echo $args['before_title'] . $title . $args['after_title'];
 					} ?>
 					<div id="edd-related-downloads-widget">
 					<ul>
